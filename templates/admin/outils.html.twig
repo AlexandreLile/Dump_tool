@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Les outils{% endblock %}
+
+{% block body %}
+<h1>Gérer les outils</h1>
+<ul>
+{% for outil in outils %}
+<h2>{{outil.name}} </h2>
+    <p>{{outil.content}}</p>
+{% endfor %}
+</ul>
+{% endblock %}
